@@ -1,0 +1,36 @@
+<html>
+
+<head>
+  <title>Sound Identification Web App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="col-lg-12 header_div text-center">
+    <h2>Sound Controled Aliens</h2>
+    <p>Note: play different sound like, Clap, Snap, Meow to make the Aliens dance</p>
+    <button class="btn btn-success" onclick="startClassification();">START</button>
+  </div>
+  <div class="main_div">
+    <center>
+      <br>
+      <h3 id="result_label"></h3>
+      <h3 id="result_confidence"></h3>
+      <img src="aliens-01.png" id="alien1" width="300px" height="300px">
+      <img src="aliens-02.png" id="alien2" width="300px" height="300px">
+      <img src="aliens-03.png" id="alien3" width="300px" height="300px">
+      <img src="aliens-04.png" id="alien4" width="300px" height="300px">
+    </center>
+  </div>
+  <div class="copy_right_footer">
+    Developed By- <b>Gaurav Coder</b>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
